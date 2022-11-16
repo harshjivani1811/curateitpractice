@@ -1,0 +1,40 @@
+const express = require('express');
+const { micro, iframely, embed, healthCheck, screenshot, fullScreenshot, technologyStack, twitter, email, youtube, tiktok, instagram, amazon, imdb, productHunt, reddit, soundCloud, spotify, html, github, text, link, imageColor, webcontact, sociallink, digitalRank, phoneNumber, fontDetails, category, htmltag, ocr, excerpt, multiAPI } = require('../controller/api.controller');
+const router = express.Router();
+
+router.get('/micro', micro);
+router.get('/iframely', iframely);
+router.get('/embed', embed);
+router.get('/healthcheck', healthCheck);
+router.get('/screenshot', screenshot);
+router.get('/fullscreenshot', fullScreenshot);
+router.get('/technologystack', technologyStack);
+router.get('/twitter', twitter);
+router.get('/email', email);
+router.get('/youtube', youtube);
+router.get('/tiktok', tiktok);
+router.get('/instgram', instagram);
+router.get('/amazon', amazon);
+router.get('/imdb', imdb);
+router.get('/producthunt', productHunt);
+router.get('/reddit', reddit);
+router.get('/soundcloud', soundCloud);
+router.get('/spotify', spotify);
+router.get('/html', html);
+router.get('/github', github);
+router.get('/text', text);
+router.get('/link', link);
+router.post('/imagecolor', imageColor);
+router.get('/webcontact', webcontact);
+router.get('/sociallink', sociallink);
+router.get('/similarrank', digitalRank);
+router.get('/phone', phoneNumber);
+router.get('/font', fontDetails);
+router.get('/category', category);
+router.get('/htmltag', htmltag);
+router.get('/ocr', ocr);
+router.get('/excerpt', excerpt);
+router.get('/multiple', multiAPI);
+
+
+module.exports = router;
